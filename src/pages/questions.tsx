@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import questions from "../data/questions";
 import "./questions.css";
+import "../design-system/buttons/animations.css";
 
 const pad2 = (n: number) => n.toString().padStart(2, "0");
 

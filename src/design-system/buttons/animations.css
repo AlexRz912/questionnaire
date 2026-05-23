@@ -1,0 +1,21 @@
+.home__cta:hover .home__cta-face,
+.choice:hover .choice__face,
+.results__cta:hover .results__cta-face {
+ transform: translateY(-2px); /* déplacement de -2px sur l'axe y de cta-face (vers le haut) sur un hover du button*/
+}
+
+.home__cta.is-pressed .home__cta-shadow,
+.choice:active .choice__shadow,
+.results__cta:active .results__cta-shadow {
+  top: 0;
+}
+
+.home__cta.is-pressed .home__cta-face,
+.choice:active .choice__face,
+.results__cta:active .results__cta-face {
+  transform: translateY(8px);
+}
+
+.home__cta-arrow {
+  transition: transform 200ms ease;
+}

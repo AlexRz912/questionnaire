@@ -1,6 +1,7 @@
 import { useLocation, Link } from 'react-router-dom';
 import results from "../data/results";
 import "./results.css";
+import "../design-system/buttons/animations.css";
 
 type ResultState = {
     answers: boolean[];

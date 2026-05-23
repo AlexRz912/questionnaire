@@ -1,0 +1,24 @@
+.color-primary__success {
+    background: #1a8754;
+}
+
+.color-primary__danger {
+    background: #ff5b3d;
+}
+
+.background-app-color {
+    background: #fef7ec;
+}
+
+.strong-text-color {
+    color: #161519;
+}
+
+.color-secondary__danger {
+    color: #3a0d05;
+}
+
+.color-secondary__shadow {
+    background-color: #161519;
+}
+

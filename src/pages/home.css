@@ -46,6 +46,12 @@
 }
 
 /* ---------- CTA Button ---------- */
+/* 
+  Le button CTA se décompose en trois éléments :
+  __cta
+  __cta-shadow
+  __cta-face
+*/
 .home__cta {
   position: relative;
   display: inline-block;
@@ -85,26 +91,3 @@
   transition: transform 100ms ease;
 }
 
-.home__cta:hover .home__cta-face {
-  transform: translateY(-2px);
-}
-
-.home__cta.is-pressed .home__cta-shadow {
-  top: 0;
-}
-
-.home__cta.is-pressed .home__cta-face {
-  transform: translateY(8px);
-}
-
-.home__cta:focus-visible .home__cta-face {
-  box-shadow: 0 0 0 4px #ffd23f;
-}
-
-.home__cta-arrow {
-  transition: transform 200ms ease;
-}
-
-.home__cta:hover .home__cta-arrow {
-  transform: translateX(4px);
-}

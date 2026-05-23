@@ -132,6 +132,7 @@
   letter-spacing: -0.01em;
   transition: transform 100ms ease;
 }
+/* Transformations similaires au CTA d'home.tsx */
 
 .choice--no .choice__face {
   background: #ff5b3d;
@@ -141,17 +142,6 @@
 .choice--yes .choice__face {
   background: #1a8754;
   color: #fef7ec;
-}
-
-.choice:hover .choice__face {
-  transform: translateY(-2px);
-}
-
-.choice:active .choice__shadow {
-  top: 0;
-}
-.choice:active .choice__face {
-  transform: translateY(8px);
 }
 
 .choice:focus-visible .choice__face {

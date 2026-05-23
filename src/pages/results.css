@@ -168,19 +168,6 @@
   transition: transform 100ms ease;
 }
 
-.results__cta:hover .results__cta-face {
-  transform: translateY(-2px);
-}
-.results__cta:active .results__cta-shadow {
-  top: 0;
-}
-.results__cta:active .results__cta-face {
-  transform: translateY(8px);
-}
-.results__cta:focus-visible .results__cta-face {
-  box-shadow: 0 0 0 4px #ffd23f;
-}
-
 @media (hover: none) {
   .results__cta:hover .results__cta-face {
     transform: none;

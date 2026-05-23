@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
+import "../design-system/buttons/animations.css";
 
 export default function Home() {
   const [pressed, setPressed] = useState(false);
-
+  
   return (
     <main className="home">
       <h1 className="home__title">
@@ -23,7 +24,7 @@ export default function Home() {
       >
         <span className="home__cta-shadow" aria-hidden="true" />
         <span className="home__cta-face">
-          <span className="home__cta-label">Fais le test&nbsp;!</span>
+          <span className="home__cta-label">Fais le test&nbsp;!</span> 
           <svg
             className="home__cta-arrow"
             width="44"
