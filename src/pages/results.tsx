@@ -1,7 +1,14 @@
 import { useLocation, Link } from 'react-router-dom';
 import results from "../data/results";
 import "./results.css";
+import StatusBadge from "../components/common/badge/badge"
+import ResultCard from '../components/common/resultCard/resultCard';
+import "../design-system/layout/layout.css"
 import "../design-system/buttons/animations.css";
+import "../design-system/buttons/buttons.css";
+
+//import { LinkButtonRes } from '../components/common/buttons/linkButtons';
+import ScoreDisplay from "../components/scoreDisplay/scoreDisplay"
 
 type ResultState = {
     answers: boolean[];
@@ -25,21 +32,12 @@ export default function Results() {
     return (
         <main className="results">
             <header className="results__header">
-                <span className="results__counter">RÉSULTATS</span>
+                <StatusBadge val="RESULTATS">
+                </StatusBadge>
             </header>
-
-            <div className="results__score-wrap">
-                <span className="results__score">{state.score}</span>
-                <span className="results__score-sep">/</span>
-                <span className="results__score-total">{state.total}</span>
-            </div>
-
-            <div className="results__card">
-                <span className="results__points">{pointsLabel.trim()}</span>
-                <h1 className="results__title">{title}</h1>
-                <p className="results__description">{result.description}</p>
-            </div>
-
+            
+            <ScoreDisplay value={state.score} total={state.total} />
+            <ResultCard pointsLabel={pointsLabel.trim()} title={title} description={result.description}/>
             <Link to="/" className="results__cta">
                 <span className="results__cta-shadow" aria-hidden="true" />
                 <span className="results__cta-face">Refaire le test</span>

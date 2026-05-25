@@ -1,8 +1,13 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import questions from "../data/questions";
 import "./questions.css";
+
+import "../design-system/layout/layout.css";
 import "../design-system/buttons/animations.css";
+import "../design-system/buttons/buttons.css";
+
+import ChoiceButton from "../components/common/buttons/choiceButton";
+import StatusBadge from "../components/common/badge/badge"
 
 const pad2 = (n: number) => n.toString().padStart(2, "0");
 
@@ -25,10 +30,13 @@ export default function Questions() {
   return (
     <main className="questions">
       <header className="questions__header">
-        <span className="questions__counter">
+        <StatusBadge>
+          <span className="questions__counter">
           {pad2(index + 1)} <span className="questions__counter-sep">/</span>{" "}
           {pad2(total)}
-        </span>
+          </span>
+        </StatusBadge>
+        
         <div className="questions__bar" aria-hidden="true">
           <div
             className="questions__bar-fill"
@@ -58,43 +66,5 @@ export default function Questions() {
         />
       </div>
     </main>
-  );
-}
-
-type ChoiceProps = {
-  kind: "yes" | "no";
-  label: string;
-  isLast: boolean;
-  finalAnswers: boolean[];
-  onPick: () => void;
-};
-
-function ChoiceButton({ kind, label, isLast, finalAnswers, onPick }: ChoiceProps) {
-  const className = `choice choice--${kind}`;
-  const inner = (
-    <>
-      <span className="choice__shadow" aria-hidden="true" />
-      <span className="choice__face">{label}</span>
-    </>
-  );
-
-  if (isLast) {
-    const score = finalAnswers.filter(Boolean).length;
-    
-    return (
-      <Link
-        to="/results"
-        state={{ answers: finalAnswers, score, total: finalAnswers.length }}
-        className={className}
-        onClick={onPick}
-      >
-        {inner}
-      </Link>
-    );
-  }
-  return (
-    <button type="button" className={className} onClick={onPick}>
-      {inner}
-    </button>
   );
 }
