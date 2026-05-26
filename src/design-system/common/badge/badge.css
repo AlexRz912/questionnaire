@@ -1,0 +1,38 @@
+.questions__header {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.questions__counter {
+  display: inline-block;
+  background: #161519;
+  color: #fef7ec;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-family: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}
+
+.results__header {
+  display: flex;
+  justify-content: center;
+}
+
+.results__counter {
+  display: inline-block;
+  background: #161519;
+  color: #fef7ec;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-family: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}

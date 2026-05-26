@@ -2,9 +2,10 @@ import { useState } from "react";
 import questions from "../data/questions";
 import "./questions.css";
 
-import "../design-system/layout/layout.css";
-import "../design-system/buttons/animations.css";
-import "../design-system/buttons/buttons.css";
+import "../design-system/common/layout/layout.css";
+import "../design-system/misc/buttons/animations.css";
+import "../design-system/common/buttons/buttons.css";
+import "../design-system/common/badge/badge.css";
 
 import ChoiceButton from "../components/common/buttons/choiceButton";
 import StatusBadge from "../components/common/badge/badge"
@@ -30,7 +31,7 @@ export default function Questions() {
   return (
     <main className="questions">
       <header className="questions__header">
-        <StatusBadge>
+        <StatusBadge isQuestionPage={true}>
           <span className="questions__counter">
           {pad2(index + 1)} <span className="questions__counter-sep">/</span>{" "}
           {pad2(total)}

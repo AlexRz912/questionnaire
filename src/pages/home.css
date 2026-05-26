@@ -19,13 +19,3 @@
   white-space: nowrap;
 }
 
-.home__highlight::before {
-  content: "";
-  position: absolute;
-  inset: -4% -6%;
-  background: #ff5b3d;
-  border-radius: 16px;
-  transform: rotate(-2deg);
-  z-index: -1;
-}
-

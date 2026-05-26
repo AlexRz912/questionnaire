@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "../../../design-system/buttons/animations.css";
+import "../../../design-system/misc/buttons/animations.css";
 import "../../../pages/home.css"
 import "../../../pages/results.css"
 

@@ -3,9 +3,11 @@ import results from "../data/results";
 import "./results.css";
 import StatusBadge from "../components/common/badge/badge"
 import ResultCard from '../components/common/resultCard/resultCard';
-import "../design-system/layout/layout.css"
-import "../design-system/buttons/animations.css";
-import "../design-system/buttons/buttons.css";
+
+import "../design-system/common/layout/layout.css"
+import "../design-system/misc/buttons/animations.css";
+import "../design-system/common/buttons/buttons.css";
+import "../design-system/common/badge/badge.css";
 
 //import { LinkButtonRes } from '../components/common/buttons/linkButtons';
 import ScoreDisplay from "../components/scoreDisplay/scoreDisplay"
@@ -32,7 +34,7 @@ export default function Results() {
     return (
         <main className="results">
             <header className="results__header">
-                <StatusBadge val="RESULTATS">
+                <StatusBadge val="RESULTATS" isQuestionPage={false}>
                 </StatusBadge>
             </header>
             

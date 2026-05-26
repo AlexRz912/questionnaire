@@ -1,8 +1,8 @@
 
 import "./home.css";
-import "../design-system/buttons/animations.css";
-import "../design-system/buttons/buttons.css";
-import "../design-system/layout/layout.css"
+import "../design-system/misc/buttons/animations.css";
+import "../design-system/common/buttons/buttons.css";
+import "../design-system/common/layout/layout.css"
 import { LinkButton } from "../components/common/buttons/linkButtons"
 
 export default function Home() {

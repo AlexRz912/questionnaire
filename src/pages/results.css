@@ -1,21 +1,3 @@
-/* ---------- Pill "RÉSULTATS" en haut ---------- */
-.results__header {
-  display: flex;
-  justify-content: center;
-}
-
-.results__counter {
-  display: inline-block;
-  background: #161519;
-  color: #fef7ec;
-  padding: 10px 22px;
-  border-radius: 999px;
-  font-family: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-}
-
 /* ---------- Score géant X / N ---------- */
 .results__score-wrap {
   display: inline-flex;
