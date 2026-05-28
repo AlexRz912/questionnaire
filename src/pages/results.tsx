@@ -5,9 +5,13 @@ import StatusBadge from "../components/common/badge/badge"
 import ResultCard from '../components/common/resultCard/resultCard';
 
 import "../design-system/common/layout/layout.css"
-import "../design-system/misc/buttons/animations.css";
 import "../design-system/common/buttons/buttons.css";
+
 import "../design-system/common/badge/badge.css";
+import "../design-system/common/card/card.css";
+
+import "../design-system/misc/buttons/animations.css";
+import "../design-system/misc/score/score.css"
 
 //import { LinkButtonRes } from '../components/common/buttons/linkButtons';
 import ScoreDisplay from "../components/scoreDisplay/scoreDisplay"

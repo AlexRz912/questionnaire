@@ -1,0 +1,31 @@
+.results__score-wrap {
+  display: inline-flex;
+  align-items: baseline;
+  gap: clamp(8px, 1.5vw, 16px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.results__score {
+  font-size: clamp(96px, 18vw, 220px);
+  color: #ff5b3d;
+  -webkit-text-stroke: 3px #161519;
+  text-shadow:
+     6px 6px 0 #161519,
+    -1px -1px 0 #161519,
+     1px -1px 0 #161519,
+    -1px  1px 0 #161519;
+}
+
+.results__score-sep {
+  font-size: clamp(64px, 12vw, 140px);
+  color: #161519;
+  opacity: 0.25;
+}
+
+.results__score-total {
+  font-size: clamp(56px, 10vw, 120px);
+  color: #161519;
+  opacity: 0.55;
+}

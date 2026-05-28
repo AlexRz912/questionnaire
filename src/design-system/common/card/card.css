@@ -1,0 +1,26 @@
+.results__card {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border: 3px solid #161519;
+  border-radius: 22px;
+  padding: clamp(24px, 4vw, 36px) clamp(20px, 4vw, 40px);
+  box-shadow: 10px 10px 0 #161519;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.results__card::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  width: 96px;
+  height: 24px;
+  background: #ffd23f;
+  border: 3px solid #161519;
+  border-radius: 4px;
+}
