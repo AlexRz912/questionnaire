@@ -46,8 +46,4 @@
   box-shadow: 0 0 0 4px #ffd23f;
 }
 
-@media (hover: none) {
-  .choice:hover .choice__face {
-    transform: none;
-  }
-}
+

@@ -19,3 +19,10 @@
 .home__cta-arrow {
   transition: transform 200ms ease;
 }
+
+@media (hover: none) {
+  .results__cta:hover .results__cta-face,
+  .choice:hover .choice__face {
+    transform: none;
+  }
+}
