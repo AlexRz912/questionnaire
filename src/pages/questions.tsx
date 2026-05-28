@@ -1,15 +1,15 @@
 import { useState } from "react";
 import questions from "../data/questions";
-import "./questions.css";
 
 import "../design-system/common/layout/layout.css";
 import "../design-system/common/buttons/buttons.css";
 import "../design-system/common/badge/badge.css";
 import "../design-system/common/texts/texts.css";
 
+
+import "../design-system/misc/misc/misc.css";
 import "../design-system/misc/buttons/animations.css";
 import "../design-system/misc/texts/animations.css";
-
 
 
 import ChoiceButton from "../components/common/buttons/choiceButton";
