@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../../design-system/misc/buttons/animations.css";
 import "../../../design-system/common/texts/texts.css";
-import "../../../pages/results.css"
 
 export function LinkButton() {
 

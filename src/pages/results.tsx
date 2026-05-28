@@ -1,6 +1,5 @@
 import { useLocation, Link } from 'react-router-dom';
 import results from "../data/results";
-import "./results.css";
 import StatusBadge from "../components/common/badge/badge"
 import ResultCard from '../components/common/resultCard/resultCard';
 

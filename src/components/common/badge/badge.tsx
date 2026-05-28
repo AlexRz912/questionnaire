@@ -1,4 +1,3 @@
-import "../../../pages/results.css"
 import type { ReactNode } from "react";
 
 type props = {
